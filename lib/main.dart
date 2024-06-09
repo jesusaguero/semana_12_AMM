@@ -31,7 +31,7 @@ class MyHomePage extends StatelessWidget {
           ),
           gradient: UniversalPlatform.isAndroid
               ? LinearGradient(
-                  colors: [Colors.blue, Color.fromARGB(255, 162, 210, 117)],
+                  colors: [Color.fromARGB(255, 216, 95, 63), Colors.lightBlue],
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                 )
@@ -78,6 +78,7 @@ class WebLoginForm extends StatelessWidget {
           CupertinoTextField(
             padding: EdgeInsets.all(12),
             placeholder: 'Email',
+            prefix: Icon(Icons.person),
             decoration: BoxDecoration(
               border: Border.all(color: CupertinoColors.lightBackgroundGray),
               borderRadius: BorderRadius.circular(8.0),
@@ -88,6 +89,7 @@ class WebLoginForm extends StatelessWidget {
             padding: EdgeInsets.all(12),
             placeholder: 'Password',
             obscureText: true,
+            prefix: Icon(Icons.vpn_key),
             decoration: BoxDecoration(
               border: Border.all(color: CupertinoColors.lightBackgroundGray),
               borderRadius: BorderRadius.circular(8.0),
@@ -111,7 +113,7 @@ class MobileLoginForm extends StatelessWidget {
       padding: EdgeInsets.all(20.0),
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [Color.fromARGB(255,216,95,63), Color.fromARGB(255,216,95,63)],
+          colors: [Color.fromARGB(255, 216, 95, 63), Colors.lightBlue],
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
         ),
@@ -129,6 +131,7 @@ class MobileLoginForm extends StatelessWidget {
             decoration: InputDecoration(
               border: OutlineInputBorder(),
               labelText: 'Username',
+              prefixIcon: Icon(Icons.person, color: Colors.white),
             ),
           ),
           SizedBox(height: 20),
@@ -136,6 +139,7 @@ class MobileLoginForm extends StatelessWidget {
             decoration: InputDecoration(
               border: OutlineInputBorder(),
               labelText: 'Password',
+              prefixIcon: Icon(Icons.vpn_key, color: Colors.white),
             ),
             obscureText: true,
           ),
@@ -143,7 +147,7 @@ class MobileLoginForm extends StatelessWidget {
           ElevatedButton(
             onPressed: () {},
             style: ElevatedButton.styleFrom(
-              primary: Color.fromARGB(255, 2, 2, 2),
+              primary: Color.fromARGB(255, 0, 0, 0),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30.0),
               ),
